@@ -1,5 +1,1 @@
-You get an array of numbers, return the sum of all of the positives ones.
-
-Example [1,-4,7,12] => 1 + 7 + 12 = 20
-
-Note: if there is nothing to sum, the sum is default to 0.
+Hi, I am Sara. I live in Sweden. I have a bachelor's in program software engineering. I am interested in working in web development, especially in  the Front End Web Development field, so I watched some YouTube online courses in the fields of HTML, CSS, and JavaScript, and continued my learning. I have decided on all the programs that I write or solve and share in my git hub to communicate with people who have common interests with me, and find some job opportunities, so It would be my honor that my programs read by You! 
