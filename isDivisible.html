@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      /*
+       Create a function that checks that a number is divisible by two number x AND y, All inputs are positive, non-zero digits.
+      */
+      function isDivisible(n, x, y) {
+
+          if (n > 0 && x > 0 && y > 0){
+          if (n % x === 0 && n % y === 0){
+            return true;
+          } else
+          return false;
+        } else {
+          return ' Oooops... the inputs are not valid!';
+        }
+   }
+
+   console.log(isDivisible(15, 5, 3));
+    </script>
+  </body>
+</html>
