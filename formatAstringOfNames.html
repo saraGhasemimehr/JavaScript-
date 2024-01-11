@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+        function list(names) {
+        if (names.length === 0) {
+          return '';
+        } else if (names.length === 1) {
+          return names[0].name;
+        } else if(names.length === 2){
+          return `${names[0].name} & ${names[1].name}`;
+        }
+         else {
+          const nameList = names.map(obj => obj.name);
+          const lastTwoNames = nameList.slice(-2).join(' & ');
+          return `${nameList.slice(0,-2).join(', ')}, ${lastTwoNames}`;
+        }
+      }
+
+      console.log(list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Paul'}, {name: 'Sara'}, {name: 'Helen'} ])); 
+
+    </script>
+  </body>
+</html>
