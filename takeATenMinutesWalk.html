@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+    function isValidWalk(walk) {
+  if (walk.length !== 10) {
+    return false;
+  }
+
+  let counts = {
+    'n': 0,
+    's': 0,
+    'e': 0,
+    'w': 0
+  };
+
+  for (let i = 0; i < walk.length; i++) {
+    counts[walk[i]]++;
+  }
+
+  if (counts['n'] === counts['s'] && counts['e'] === counts['w']) {
+    return true;
+  } else {
+    return false;
+  }
+}
+let walk1 = ['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's'];  // Invalid walk, takes 10 minutes but doesn't return to starting point
+let walk2 = ['n', 'n', 'n', 's', 'e', 'w', 'e', 'w', 's', 's'];  // Valid walk, takes 10 minutes and returns to starting point
+
+console.log(isValidWalk(walk1));  // Output: false
+console.log(isValidWalk(walk2));  // Output: true
+
+
+    </script>
+  </body>
+</html>
