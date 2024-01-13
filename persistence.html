@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+    function persistence(num) {
+      let counter = 0;
+
+      while (num >= 10) {
+        let array = num.toString().split('').map(Number);
+        let multiply = array.reduce((a, b) => a * b);
+        num = multiply;
+        counter++;
+      }
+
+      return counter;
+    }
+
+    console.log(persistence(39)); // Output: 3
+
+    </script>
+  </body>
+</html>
