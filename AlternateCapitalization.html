@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function capitalize(str){
+      
+        const strToArray = str.split('');
+        const evenCapitalized = strToArray.map((letter, index) => index % 2 === 0 ? letter.toUpperCase() : letter).join('');
+    
+        const oddCapitalized = strToArray.map((letter, index) => index % 2 !== 0 ? letter.toUpperCase() : letter).join('');
+
+       return [evenCapitalized,  oddCapitalized];
+
+      }
+      console.log(capitalize('sara'));
+      function capitalize(str){
+  const strToArray = str.split('');
+  const evenCapitalized = strToArray.map((letter, index) => index % 2 === 0 ? letter.toUpperCase() : letter).join('');
+  const oddCapitalized = strToArray.map((letter, index) => index % 2 !== 0 ? letter.toUpperCase() : letter).join('');
+  return [evenCapitalized, oddCapitalized];
+}
+
+console.log(capitalize('sara')); // Output: ["SaRa", "sArA"]
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
