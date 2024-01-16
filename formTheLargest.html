@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+  
+        function maxNumber(number){
+          const arrNumber = number.toString().split('').map(Number);
+          return parseInt(arrNumber.sort((a,b) => b - a).join(''));
+        }
+
+        console.log(maxNumber(527)); 
+
+   /*     function maxNumber(number){
+  const arrNumber = number.toString().split('').map(Number);
+  let sortedArr = arrNumber.sort((a, b) => b - a); // Sort the array in descending order
+  return parseInt(sortedArr.join('')); // Join the sorted array and convert it to a number
+}
+
+console.log(maxNumber(527)); // Output: 752
+*/
+
+     
+
+      
+    </script>
+  </body>
+</html>
